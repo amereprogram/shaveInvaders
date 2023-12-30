@@ -2,6 +2,7 @@
 <---           Hero             -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
+@import 'css/styles.css';
 @media only screen and (min-width: 0rem) {
     #hero-229 {
         /* Centers button */
