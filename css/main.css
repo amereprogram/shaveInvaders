@@ -138,9 +138,10 @@
         text-decoration: none;
         font-weight: 700;
         margin: 0 0 1rem 0;
-        color: #fff;
+        color: #ffffff;
         padding: 0;
-        background-color: var(--primary);
+        /* background-color: var(--primary); */
+        background-color: #ffba43;
         display: inline-block;
         position: relative;
         z-index: 1;
