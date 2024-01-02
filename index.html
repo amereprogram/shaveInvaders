@@ -19,20 +19,33 @@
             <p class="cs-text">
                 A portfolio to show some front-end, back-end, git, game development and my enthusiasm for working at MANSCAPED.
             </p>
-            <a href="" class="cs-button-solid">PLAY</a>
-            <a href="https://github.com/amereprogram" class="cs-button-transparent">
+            <a href="https://github.com/amereprogram" class="cs-button-solid">More Projects</a>
+            <!-- <a href="https://github.com/amereprogram" class="cs-button-transparent">
                 <img class="cs-img" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg" alt="play icon" width="17" height="17">
                 Other Projects
-            </a>         
+            </a>          -->
+            
         </div>
-        <iframe src="shaveInvaders_webgl/index.html" width="100%" height="100%"></iframe>
+        <iframe src="shaveInvaders_webgl/index.html" id="target">
+        </iframe>
+        <script>
+            let div = document.getElementById("target");
+            div.onload = function() {
+                div.style.height =
+                div.contentWindow.document.body.scrollHeight + 'px';
+            }
+        </script>
+        <!-- <iframe src="shaveInvaders_webgl/index.html"></iframe> -->
     </div>
+
+    
 
     <!-- Background Image -->
     <picture class="cs-picture">
-        <source media="(max-width: 600px)" srcset="assets/62885.jpg">
+        <!-- <source media="(max-width: 600px)" srcset="assets/62885.jpg">
         <source media="(min-width: 601px)" srcset="assets/62885.jpg">
-        <img loading="lazy" decoding="async" src="assets/62885.jpg" alt="mountains" width="2250" height="1500" aria-hidden="true">
+        <source media="(min-width: 1300px)" srcset="assets/62885.jpg"> -->
+        <img loading="lazy" decoding="async" src="assets/62885.jpg" width="2250" height="1500" aria-hidden="true">
     </picture>
 </section>
 </body>

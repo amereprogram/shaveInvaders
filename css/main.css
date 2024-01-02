@@ -48,6 +48,7 @@
         width: 100%;
         /* Makes image act like a background-image */
         object-fit: cover;
+        
     }
     #hero-229 .cs-container {
         width: 100%;
@@ -58,6 +59,18 @@
         padding: clamp(9rem, 25.95vw, 17.5rem) 0;
         margin: auto;
         position: relative;
+        height: auto;
+        max-height: none;   
+    }
+    #hero-229 .cs-container iframe {
+        width: 100%;
+        height: 700px;
+        /* height: calc(100vh - 30px); */
+        border: none;
+        margin: 0;
+        position: relative;
+        display: block;
+        padding-top: 5%;
     }
     #hero-229 .cs-container:before {
         /* Left Line */
@@ -242,12 +255,12 @@
 /* Desktop Parallax Effect - 1300px */
 @media only screen and (min-width: 81.25rem) {
     #hero-229 {
-        background: url("https://csimg.nyc3.digitaloceanspaces.com/Hero/Background.jpg");
+        background-image: url("https://getwallpapers.com/wallpaper/full/c/5/3/1067582-gorgerous-space-invaders-wallpaper-1920x1200.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         /* creates parallax effect on background image */
-        background-attachment: fixed;
+        background-attachment: relative;
         /* remove img tag so we can make parallax work */
     }
     #hero-229 .cs-picture img {
