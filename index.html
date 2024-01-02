@@ -13,7 +13,7 @@
 <body>
 <section id="hero-229">
     <div class="cs-container">
-        <div class="cs-flex-group">
+        <div class="cs-flex-group" style="padding-bottom: 5%;">
             <span class="cs-topper">Presentation for MANSCAPED</span>
             <h1 class="cs-title">Shave Invaders</h1>
             <p class="cs-text">
@@ -27,8 +27,15 @@
             
         </div>
         <div style="text-align:center">
-            <iframe src="shaveInvaders_webgl/index.html" style="width:960px; height:800px; border: 0; margin: 0;"></iframe>
+            <iframe src="shaveInvaders_webgl/index.html" id="target" style="width:960px;height:800px;"></iframe>
         </div>
+        <script>
+            let div = document.getElementById("target");
+            div.onload = function() {
+                div.style.height =
+                div.contentWindow.document.body.scrollHeight + 'px';
+            }
+        </script>
         <!-- <iframe src="shaveInvaders_webgl/index.html" id="target">
         </iframe>
         <script>
